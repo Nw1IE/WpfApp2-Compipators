@@ -1,0 +1,81 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="LightGray">
+            <Expander Header="Компания" x:Name="company_group">
+                <StackPanel>
+                    <RadioButton IsChecked="True" Margin="3">Лнит</RadioButton>
+                    <RadioButton Margin="3">СКБ Контур</RadioButton>
+                    <RadioButton Margin="3">Ростех</RadioButton>
+                    <RadioButton Margin="3">Ростелеком</RadioButton>
+                    <RadioButton Margin="3">Cisco</RadioButton>
+                    <RadioButton Margin="3">Asbis</RadioButton>
+                    <RadioButton Margin="3">Лнит</RadioButton>
+                    <RadioButton Margin="3">СКБ Контур</RadioButton>
+                    <RadioButton Margin="3">Ростех</RadioButton>
+                    <RadioButton Margin="3">Ростелеком</RadioButton>
+                    <RadioButton Margin="3">Cisco</RadioButton>
+                    <RadioButton Margin="3">Asbis</RadioButton>
+                    <RadioButton Margin="3">Лнит</RadioButton>
+                    <RadioButton Margin="3">СКБ Контур</RadioButton>
+                    <RadioButton Margin="3">Ростех</RadioButton>
+                    <RadioButton Margin="3">Ростелеком</RadioButton>
+                    <RadioButton Margin="3">Cisco</RadioButton>
+                    <RadioButton Margin="3">Asbis</RadioButton>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+        <StackPanel Grid.Column="1" x:Name="Compilators">
+            <GroupBox Header="Компиляторы">
+                <StackPanel>
+                    <CheckBox x:Name="checkbox1" IsChecked="True" Content="Visual Studio" Height="20"/>
+                    <CheckBox x:Name="checkbox2" IsChecked="False" Content="Visual Studio Code" Height="20"/>
+                    <CheckBox x:Name="checkbox3" IsChecked="False" Content="XCode" Height="20"/>
+                    <CheckBox x:Name="checkbox4" IsChecked="False" Content="PyCharm" Height="20"/>
+                    <CheckBox x:Name="checkbox5" IsChecked="False" Content="Spyder" Height="20"/>
+                    <CheckBox x:Name="checkbox6" IsChecked="True" Content="Pydev" Height="20"/>
+                    <CheckBox x:Name="checkbox7" IsChecked="False" Content="Code Blocks" Height="20"/>
+                    <CheckBox x:Name="checkbox8" IsChecked="False" Content="Dev C++" Height="20"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+                    Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Content="Сохранить Выбор" Background="#9EFF00" Height="40" Width="200" Margin="20"/>
+            <TextBlock Text="Выбор Сохранен"/>
+
+
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+                     Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Отменить Выбор" Background="#D00005" Height="40" Width="200" Margin="20" />
+            
+        </StackPanel>
+
+        <WrapPanel x:Name="wrapPannel" Grid.Column="1" Height="150" Width="590" Orientation="Vertical" 
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.505,0.72">
+            <GroupBox>
+                <WrapPanel Height="127">
+                    <CheckBox x:Name="checkbox9" Content="Администратор баз данных" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox10" Content="Администратор вычислительной сети" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox11" Content="Администратор защиты" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox12" Content="Аналитик программного обеспечения" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox13" Content="Архитектор проограммного обеспечения" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox14" Content="Ведущий программист" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox15" Content="Контент-менеджер" IsChecked="False"/>
+                    <CheckBox x:Name="checkbox16" Content="Тестировщик" IsChecked="False"/>
+                </WrapPanel>
+            </GroupBox>
+        </WrapPanel>
+    </Grid>
+</Window>
