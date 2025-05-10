@@ -51,14 +51,14 @@
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
                     Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button Content="Сохранить Выбор" Background="#9EFF00" Height="40" Width="200" Margin="20"/>
+            <Button Content="Сохранить Выбор" Background="#8E9F60" Height="40" Width="200" Margin="20" Name="send_button"/>
             <TextBlock Text="Выбор Сохранен"/>
 
 
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
                      Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Отменить Выбор" Background="#D00005" Height="40" Width="200" Margin="20" />
+            <Button Content="Отменить Выбор" Background="#FFAF5D44" Height="40" Width="200" Margin="20" Name="drop_button" />
             
         </StackPanel>
 
